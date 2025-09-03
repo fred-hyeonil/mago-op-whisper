@@ -13,6 +13,14 @@ API_TOKENS = [
 
 auth_scheme = HTTPBearer()
 
+#
+#async def api_token(credentials: HTTPAuthorizationCredentials = Depends(auth_scheme)):
+#    if credentials.credentials not in API_TOKENS:
+#        raise HTTPException(status_code=status.HTTP_403_FORBIDDEN)
+#
+
 async def api_token(credentials: HTTPAuthorizationCredentials = Depends(auth_scheme)):
-    if credentials.credentials not in API_TOKENS:
-        raise HTTPException(status_code=status.HTTP_403_FORBIDDEN)
+    # if credentials.credentials not in API_TOKENS:
+    #     raise HTTPException(status_code=status.HTTP_403_FORBIDDEN)
+    return
+    

@@ -66,7 +66,7 @@ async def overview():
     "/run",
     summary="파일 업로드 방식",
     description="파일 업로드 방식으로 음성 파일을 전송하여 음성 파일을 텍스트로 변환합니다.",
-    operation_id="run_endpoint", dependencies=[Depends(api_token)],
+    operation_id="run_endpoint"
 )
 async def run(
     file: UploadFile = File(..., description="음성 파일을 업로드"),
@@ -86,8 +86,7 @@ async def run(
     "/uri",
     summary="URI 방식",
     description="저장소에 있는 파일을 직접 사용하여 음성인식을 합니다.",
-    operation_id="uri_endpoint",
-    dependencies=[Depends(api_token)],
+    operation_id="uri_endpoint"
 )
 async def run_uri(
     uri: str = Body(..., description="저장소에 있는 파일의 URI"),
@@ -107,9 +106,10 @@ async def run_uri(
     "/bytes",
     summary="Binary 전송 방식",
     description="Binary 전송 방식으로 음성 파일을 전송하여 음성 파일을 텍스트로 변환합니다.",
-    operation_id="bytes_endpoint",
-    dependencies=[Depends(api_token)],
+    operation_id="bytes_endpoint"
+    
 )
+
 async def run_bytes(
     request: Request,
     data: bytes = Body(..., description="음성 파일의 바이트 데이터"),
@@ -132,9 +132,9 @@ async def run_bytes(
     "/download",
     summary="파일 다운로드",
     description="음성인식 결과 파일을 다운로드합니다.",
-    operation_id="download_endpoint",
-    dependencies=[Depends(api_token)],
+    operation_id="download_endpoint"
 )
+
 async def download_file(
     file_path: str = Query(..., description="다운로드할 파일의 경로"),
 ):

@@ -1,0 +1,23 @@
+{
+  "code": 700,
+  "message": "Success",
+  "content": {
+    "id": "956f426bea444ef2b6c4f61bf17f951a",
+    "result": {
+      "audio_info": {
+        "duration": 0,
+        "sample_rate": 0,
+        "channels": 0
+      },
+      "en": {
+        "text": " This is for me. Next time. You shoot. I have to buy a little bit of pizza for us. I read. Please. Sue. Chloe. Let's write for me. Especially for me.",
+        "language": "en",
+        "json_path": "exp/whisper/956f426bea444ef2b6c4f61bf17f951a/en/956f426bea444ef2b6c4f61bf17f951a/rin_audio.json",
+        "srt": "exp/whisper/956f426bea444ef2b6c4f61bf17f951a/en/956f426bea444ef2b6c4f61bf17f951a/rin_audio.srt",
+        "vtt": "exp/whisper/956f426bea444ef2b6c4f61bf17f951a/en/956f426bea444ef2b6c4f61bf17f951a/rin_audio.vtt",
+        "script": "This is for me.\nNext time.\nYou shoot.\nI have to buy a little bit of pizza for us.\nI read.\nPlease.\nSue.\nChloe.\nLet's write for me.\nEspecially for me."
+      },
+      "decoding_time": 2.275
+    }
+  }
+}
